@@ -14,7 +14,7 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow:0 3px 20px 0px rgba(0, 0, 0, 0.1)
+    box-shadow:0 3px 20px 0px rgba(255, 255, 255, 0.1)
 }
 
 .form-modal button{
@@ -165,9 +165,12 @@
 .fa-windows{
     color:#0072c6;
 }
-
+.-box-sd-effect{
+    color: var(--color-bg);
+}
 .-box-sd-effect:hover{
-    box-shadow: 0 4px 8px hsla(210,2%,84%,.2);
+    background: var(--color-bg);
+    color:var(--color-primary)
 }
 
 @media only screen and (max-width:500px){

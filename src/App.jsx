@@ -1,13 +1,13 @@
 import React from 'react'
 import {BrowserRouter,Routes, Route } from 'react-router-dom'
-import { NavBar } from './Components/Nav/Navbar'
+// import { Nav } from './Components/Nav/Navbar.jsx'
 import SignUp from './Components/SignUp/SignUp.jsx'
 import Home from './Components/Home/Home'
 const App = () => {
   return (
     
     <div>
-        {/* <NavBar/> */}
+        {/* <Nav/> */}
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Home/>}/>
