@@ -1,24 +1,27 @@
-import React from 'react'
-import {BrowserRouter,Routes, Route } from 'react-router-dom'
-// import { Nav } from './Components/Nav/Navbar.jsx'
-import SignUp from './Components/SignUp/SignUp.jsx'
-import Home from './Components/Home/Home'
-const App = () => {
-  return (
-    
-    <div>
-        {/* <Nav/> */}
-    <BrowserRouter>
-    <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/signup" element={<SignUp/>}/>
-    </Routes>
+import React, { Suspense, useRef } from "react";
+import Dashboard from './components/Dashboard/Dashboard';
+import Signin from './components/Signin/Signin';
+import SignUp from './components/Signup/Signup';
+import { NavBar } from './components/Nav/NavBar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
+function App() {
+  return (
+    <>
+    <NavBar/>
+    <BrowserRouter>
     
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Dashboard/>}/>
+      <Route path="/signin" element={<Signin/>}/>
+      <Route path="/signup" element={<SignUp/>}/>
     
-    </div>
-  )
+      </Routes>
+      </BrowserRouter>
+        
+    </>
+  );
 }
 
-export default App
+export default App;
