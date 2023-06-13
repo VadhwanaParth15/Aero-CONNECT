@@ -11,7 +11,7 @@ import {
   MDBInput
 }
 from 'mdb-react-ui-kit';
-import img from '../../Assets/signin.jpg';
+import img from '../../Assets/signin.webp';
 
 function Signin() {
   return (

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "./nav.css";
 import logo from "../../Assets/aero.png";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FiShoppingCart } from "react-icons/fi";
 
 import { HashLink } from "react-router-hash-link";
@@ -32,7 +33,7 @@ export const NavBar = () => {
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <Container>
+        <Container className="justify-contant-center align-items-center">
           <Navbar.Brand href="/">
             <img className="logonav" src={logo} alt="Logo" />
           </Navbar.Brand>
@@ -58,8 +59,65 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("Schedule")}
               >
-                Schedule
+               News & Expertise
               </Nav.Link>
+              
+              <NavDropdown title="Events" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/#SEvents"
+                className={
+                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("Events")}
+              >
+                Events
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/#SEvents"
+                className={
+                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("Events")}
+              >
+                Events
+              </NavDropdown.Item>
+              </NavDropdown>
+                
+
+              <NavDropdown title="Career & Education" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/#SEvents"
+                className={
+                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("Events")}
+              >
+                Events
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/#SEvents"
+                className={
+                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("Events")}
+              >
+                Events
+              </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown title="Get Involved" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/#SEvents"
+                className={
+                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("Events")}
+              >
+                Events
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/#SEvents"
+                className={
+                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("Events")}
+              >
+                Events
+              </NavDropdown.Item>
+              </NavDropdown>
               <Nav.Link
                 href="/#About"
                 className={
@@ -67,38 +125,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("About")}
               >
-                About
-              </Nav.Link>
-              <Nav.Link
-                href="/#SEvents"
-                className={
-                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Events")}
-              >
-                Events
-              </Nav.Link>
-              <Nav.Link
-                href="/#Sponser"
-                className={
-                  activeLink === "Sponser"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Sponser")}
-              >
-                Sponsor
-              </Nav.Link>
-              <Nav.Link
-                href="/#Team"
-                className={
-                  activeLink === "Team"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Team")}
-              >
-                Team
+                About Us
               </Nav.Link>
               <Nav.Link
                 href="/signin"
@@ -109,7 +136,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("Glimpse")}
               >
-                Glimpse
+                SignIn
               </Nav.Link>
              
               {/* <Nav.Link

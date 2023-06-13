@@ -8,7 +8,7 @@ const Dashboard = () => {
     <div>
         
        
-        <Home/>
+        {/* <Home/> */}
         
     </div>
   )
