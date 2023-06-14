@@ -4,6 +4,7 @@ import "./nav.css";
 import logo from "../../Assets/aero.png";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FiShoppingCart } from "react-icons/fi";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -38,7 +39,8 @@ export const NavBar = () => {
             <img className="logonav" src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav p-3">
-            <span className="navbar-toggler-icon"></span>
+            {/* <span className="navbar-toggler-icon"></span> */}
+            <HiOutlineMenuAlt1 />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
@@ -62,7 +64,7 @@ export const NavBar = () => {
                News & Expertise
               </Nav.Link>
               
-              <NavDropdown title="Events" id="basic-nav-dropdown">
+              <NavDropdown  className="dropdown" title="Events" id="basic-nav-dropdown">
               <NavDropdown.Item href="/#SEvents"
                 className={
                   activeLink === "Events" ? "active navbar-link" : "navbar-link"

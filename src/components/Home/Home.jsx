@@ -5,10 +5,11 @@ import img1 from '../../Assets/Carousels.jpg'
 const Home = () => {
   return (
     <section className="container">
+      <section className="caraousalimg">
       <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-90"
           src={img1}
           alt="First slide"
         />
@@ -19,6 +20,8 @@ const Home = () => {
       </Carousel.Item>
      
     </Carousel>
+      </section>
+      
     </section>
   )
 }
