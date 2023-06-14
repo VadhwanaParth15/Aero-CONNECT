@@ -4,6 +4,7 @@ import Signin from './components/Signin/Signin';
 import SignUp from './components/Signup/Signup';
 import { NavBar } from './components/Nav/NavBar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AllCourse from "./components/Course/AllCourse";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Route path="/" element={<Dashboard/>}/>
       {/* <Route path="/signin" element={<Signin/>}/> */}
       {/* <Route path="/signup" element={<SignUp/>}/> */}
-    
+      <Route path="/allcourses" element={<AllCourse/>}/>
       </Routes>
       </BrowserRouter>
         

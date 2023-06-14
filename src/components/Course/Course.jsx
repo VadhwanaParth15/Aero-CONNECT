@@ -2,6 +2,7 @@ import React from 'react'
 import './course.css'
 import Courses from './Course_Card'
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom'
 
 const Course = () => {
     const items = [
@@ -47,7 +48,8 @@ const Course = () => {
       ))}
         </Row>
         </div>
-        <h5 className='d-flex text-align-center justify-content-center align-item-center'><a variant="primary" className='button' href="/#courses">SEE MORE</a></h5>
+        <h5 className='d-flex text-align-center justify-content-center align-item-center'><Link to={`/allcourses`} className=' button' target='_blank' style={{ textDecoration: 'none' }}>
+SEE MORE</Link></h5>
 
     </section>
   )
