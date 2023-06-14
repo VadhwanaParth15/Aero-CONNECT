@@ -50,11 +50,12 @@ nav.navbar a.navbar-brand {
 nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
     color: var(--color-white)!important;
-    letter-spacing: 0.8px;
+    /* letter-spacing: 0.8px; */
     padding: 0 25px;
     font-size: 18px;
     opacity: 0.75;
-    font-family: "valorant";
+    /* font-family: "valorant"; */
+    white-space: nowrap
 }
 nav.navbar .navbar-nav .nav-link.navbar-link .dropdown{
     padding: 0 25px;

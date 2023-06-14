@@ -43,7 +43,7 @@ export const NavBar = () => {
             <HiOutlineMenuAlt1 />
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="ms-auto d-flex align-item-center justify-content-center">
               {/* <Nav.Link
                 href="#home"
                 className={
