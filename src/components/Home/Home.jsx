@@ -4,7 +4,7 @@ import img1 from '../../Assets/Carousels.jpg'
 
 const Home = () => {
   return (
-    <section className="container">
+    <section className="">
       <section className="caraousalimg">
       <Carousel>
       <Carousel.Item>

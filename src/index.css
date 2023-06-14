@@ -69,7 +69,7 @@ a{
 a:hover{
     color: var(--color-white);
 }
-.btn{
+.button{
     width: max-content;
     display: inline-block;
     background: var(--color-primary);
@@ -79,15 +79,18 @@ a:hover{
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
+    text-decoration: none;
 }
-.btn:hover{
+.button:hover{
     background: var(--color-bg);
-    color: var(--color-white);
-    border-color: transparent;
+    color: var(--color-primary);
+    border-color: 1px solid var(--color-bg);
+    text-decoration: none;
 }
 .btn-primary{
     background: var(--color-primary);
     color: var(--color-bg);
+    text-decoration: none;
 }
 img{
     display: block;

@@ -7,21 +7,21 @@ const Course = () => {
     const items = [
         {
             title: "python",
-            Subtitle: "#",
+            img: "python.png",
             description: "Python is a programming language that lets you work quickly and integrate systems more effectively.",
             link: "#",
             catid: 1,
         },
         {
             title: "python",
-            Subtitle: "#",
+            img: "python.png",
             description: "Python is a programming language that lets you work quickly and integrate systems more effectively.",
             link: "#",
             catid: 2,
         },
         {
             title: "python",
-            Subtitle: "#",
+            img: "python.png",
             description: "Python is a programming language that lets you work quickly and integrate systems more effectively.",
             link: "#",
             catid: 3,
@@ -32,13 +32,13 @@ const Course = () => {
   return (
     <section className='container courses'>
         <h2 className='text-align-center'>COURSES</h2>
-        <div className="course_cards">
+        <div className="d-flex justify-content-center align-item-center course_cards">
         <Row>
         {items.map((members) => (
             <Col key={members.catid}>
           <Courses
             title={members.title}
-            Subtitle={members.Subtitle}
+            img={members.img}
             description={members.description}
             link={members.link}
             catid={members.catid}
@@ -47,6 +47,7 @@ const Course = () => {
       ))}
         </Row>
         </div>
+        <h5 className='d-flex text-align-center justify-content-center align-item-center'><a variant="primary" className='button' href="/#courses">SEE MORE</a></h5>
 
     </section>
   )

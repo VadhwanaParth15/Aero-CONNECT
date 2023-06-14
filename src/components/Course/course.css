@@ -1,11 +1,15 @@
 .courses{
     background: var(--color-bg-variant);
-    padding: 2rem 0;
-    
+    padding: 2rem;
+    /* display: flex; */
     
 }
+.courses h2{
+    text-decoration: underline;
+}
 .courses_cards {
-    padding: 2rem 0;
+    padding: 2rem;
     border-radius: 2rem;
     height: fit-content;
 }
+
