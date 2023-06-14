@@ -1,5 +1,6 @@
 import React, { Suspense, useRef } from "react";
 import Home from '../Home/Home'
+import Course from "../Course/Course";
 
 
 
@@ -9,6 +10,7 @@ const Dashboard = () => {
         
        
       <Home/>
+      <Course/>
         
     </div>
   )

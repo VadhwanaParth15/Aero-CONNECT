@@ -1,0 +1,11 @@
+.courses{
+    background: var(--color-bg-variant);
+    padding: 2rem 0;
+    
+    
+}
+.courses_cards {
+    padding: 2rem 0;
+    border-radius: 2rem;
+    height: fit-content;
+}

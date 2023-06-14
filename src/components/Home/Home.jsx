@@ -9,7 +9,7 @@ const Home = () => {
       <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-90"
+          className="d-block w-100"
           src={img1}
           alt="First slide"
         />
