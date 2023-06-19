@@ -23,7 +23,7 @@ nav.navbar {
         padding: 15px 0;
         background-color: rgb(235, 255, 252);
         backdrop-filter: blur(10px);
-        border-bottom: #ffffff solid 1px;
+        border-bottom: var(--color-bg) solid 1px;
         color: #000;
     }
    

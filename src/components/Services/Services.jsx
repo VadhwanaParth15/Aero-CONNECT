@@ -33,7 +33,7 @@ const Services = () => {
        
       ];
   return (
-    <section className='container courses'>
+    <section id="service"className='container courses'>
     <h2 className='text-align-center'>Service</h2>
     <div className="d-flex justify-content-center align-item-center Service_cards">
     <Row>

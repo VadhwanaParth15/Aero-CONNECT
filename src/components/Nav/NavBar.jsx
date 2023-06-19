@@ -42,13 +42,13 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto d-flex align-item-center justify-content-center">
               <Nav.Link
-                href="#home"
+                href="#service"
                 className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
+                  activeLink === "service" ? "active navbar-link" : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("home")}
               >
-                Home
+                Service
               </Nav.Link>
               <Nav.Link
                 href="https://drive.google.com/drive/folders/1Jy_X_3X23gL_CVeEgH-010sJgfMgoP-3"
