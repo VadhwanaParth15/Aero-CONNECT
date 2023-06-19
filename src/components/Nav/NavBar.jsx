@@ -2,9 +2,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "./nav.css";
 import logo from "../../Assets/aero.png";
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { FiShoppingCart } from "react-icons/fi";
-import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -33,18 +30,18 @@ export const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <Container className="justify-contant-center align-items-center">
+      <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+        <Container >
           <Navbar.Brand href="/">
             <img className="logonav" src={logo} alt="Logo" />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav p-3">
-            {/* <span className="navbar-toggler-icon"></span> */}
-            <HiOutlineMenuAlt1 />
+          <Navbar.Toggle className="toggle-border" aria-controls="basic-navbar-nav">
+            <span className="navbar-toggler-icon"></span>
+          
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto d-flex align-item-center justify-content-center">
-              {/* <Nav.Link
+              <Nav.Link
                 href="#home"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
@@ -52,7 +49,7 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink("home")}
               >
                 Home
-              </Nav.Link> */}
+              </Nav.Link>
               <Nav.Link
                 href="https://drive.google.com/drive/folders/1Jy_X_3X23gL_CVeEgH-010sJgfMgoP-3"
                 target="_blank"
@@ -64,62 +61,7 @@ export const NavBar = () => {
                News & Expertise
               </Nav.Link>
               
-              <NavDropdown  className="dropdown" title="Events" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/#SEvents"
-                className={
-                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Events")}
-              >
-                Events
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/#SEvents"
-                className={
-                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Events")}
-              >
-                Events
-              </NavDropdown.Item>
-              </NavDropdown>
-                
-
-              <NavDropdown title="Career & Education" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/#SEvents"
-                className={
-                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Events")}
-              >
-                Events
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/#SEvents"
-                className={
-                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Events")}
-              >
-                Events
-              </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Get Involved" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/#SEvents"
-                className={
-                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Events")}
-              >
-                Events
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/#SEvents"
-                className={
-                  activeLink === "Events" ? "active navbar-link" : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("Events")}
-              >
-                Events
-              </NavDropdown.Item>
-              </NavDropdown>
+              
               <Nav.Link
                 href="/#About"
                 className={

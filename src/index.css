@@ -10,12 +10,11 @@
     text-decoration: none;
 }
 :root{
-    --color-bg:#fff;
-    --color-bg-variant:#BAD7E9;
-    --color-primary-variant:#BAD7E9;
-    --color-primary:#2B3467;
-    --color-black: #000;
-    --color-light:rgba(225,225,255,0.6);
+    --color-bg:#ffffff;
+    --color-bg-variant:#faefe9;
+    --color-primary:#4f4a82;
+    --color-black: #292d31;
+    
 
     --container-width-lg:75%;
     --container-width-md:86%;
