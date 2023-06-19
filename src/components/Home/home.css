@@ -3,7 +3,7 @@
     display: block;
 }
 .home:before{
-    content: "";
+    /* content: ""; */
     background:url(../../Assets/bg.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0;
