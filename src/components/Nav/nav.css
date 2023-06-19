@@ -21,7 +21,7 @@ nav.navbar {
         z-index: 9999;
         transition: 0.32s ease-in-out;
         padding: 15px 0;
-        background-color: rgb(235, 255, 252);
+        background-color: var(--color-bg);
         backdrop-filter: blur(10px);
         border-bottom: var(--color-bg) solid 1px;
         color: #000;
