@@ -15,7 +15,7 @@
     height: fit-content;
 }
 .allcourses{
-    margin-top: 5rem;
+    margin-top: 10rem;
     background: var(--color-bg-);
 }
 .allcourses h2{
@@ -25,4 +25,18 @@
     width:fit-content;
     line-height: 50px;
 }
-
+@media screen and (max-width: 768px) {
+    .allcourses{
+        margin-top: 5rem;
+    }
+    .courses{
+        padding: 0;
+    }
+    .courses_cards{
+        padding: 0;
+    }
+    .allcourses h2{
+        font-size: 1.5rem;
+    }
+}
+    
