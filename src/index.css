@@ -51,14 +51,15 @@ section{
 }
 section > h2,section > h5{
     text-align: center;
-    color: var(--color-light);
+    color: var(--color-black);
 }
 section > h2{
     margin-bottom: 3rem;
-    color: var(--color-primary);
+    color: var(--color-black);
+    font-family: 'ubuntu';
 }
 .text-light{
-    color: var(--color-light);
+    color: var(--color-clack);
 
 }
 a{

@@ -32,7 +32,7 @@ const Course = () => {
       ];
   return (
     <section className='container courses'>
-        <h2 className='text-align-center'>COURSES</h2>
+        <h2 className='text-align-center'>Courses</h2>
         <div className="d-flex justify-content-center align-item-center course_cards">
         <Row>
         {items.map((members) => (

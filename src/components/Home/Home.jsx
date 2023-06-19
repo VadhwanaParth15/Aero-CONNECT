@@ -1,12 +1,13 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import img1 from '../../Assets/Carousels.jpg'
+import './home.css'
 
 const Home = () => {
   return (
     
-      <section className="caraousalimg">
-      <Carousel>
+      <section className="home">
+      {/* <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -19,8 +20,13 @@ const Home = () => {
         </Carousel.Caption>
       </Carousel.Item>
      
-    </Carousel>
-      
+    </Carousel> */}
+    <div className="home_content">
+    <p className="home_heading">
+      Aerospace Career Hub and Resource Center 
+    </p>
+    <p className='home_description'>Unlock your potential as an aerospace engineer with AeroCom's comprehensive career guidance, internship opportunities, online courses, and event resources.</p>
+      </div>
       
     </section>
   )

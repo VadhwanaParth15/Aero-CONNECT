@@ -7,9 +7,7 @@
 .card{
     border: 1px solid transparent;
 }
-.courses h2{
-    text-decoration: underline;
-}
+
 .courses_cards {
     padding: 2rem;
     border-radius: 2rem;

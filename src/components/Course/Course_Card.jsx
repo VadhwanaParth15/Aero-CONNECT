@@ -7,7 +7,7 @@ const Course_Card = ({ title, img, description,  link }) => {
   return (
     <div>
         <Col size={12} sm={6} md={4}>
-        <Card style={{ width: '18rem',margin:'1rem 2rem',borderColor:'transparent' }}>
+        <Card style={{ width: '14rem',margin:'1rem 2rem',borderColor:'transparent' }}>
       <Card.Img variant="top" src={img} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
