@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom'
 
 
 const Service = ({ title, description,  link }) => {
@@ -13,7 +14,7 @@ const Service = ({ title, description,  link }) => {
         <Card.Text style={{ fontSize:"1.1rem",paddingBottom:'1rem' }}>
           {description}
         </Card.Text>
-        <a style={{ fontSize:"1rem",marginLeft:'1rem' }} variant="primary" className='button' href={link}>See More</a>
+        <Link to={link}  style={{ textDecoration:'none',color:'ffffff' }}><a style={{ fontSize:"1rem",marginLeft:'1rem' }} variant="primary" className='button'>See More</a></Link>
       </Card.Body>
     </Card>
     </Col>
