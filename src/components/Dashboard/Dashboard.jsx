@@ -2,7 +2,7 @@ import React, { Suspense, useRef } from "react";
 import Home from '../Home/Home'
 import Course from "../Course/Course";
 import Services from "../Services/Services";
-
+import About from "../About/About";
 
 
 const Dashboard = () => {
@@ -13,7 +13,7 @@ const Dashboard = () => {
       <Home/>
       {/* <Course/> */}
       <Services/>
-        
+      <About/>
     </div>
   )
 }

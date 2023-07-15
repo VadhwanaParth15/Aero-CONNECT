@@ -28,7 +28,7 @@ const Home = () => {
     </p>
     <p className='home_description'>Unlock your potential as an aerospace engineer with AeroCom's comprehensive career guidance, internship opportunities, online courses, and event resources.</p>
     </div>
-      <Link to="/about" className="button d-flex m-3 mx-auto text-align-center justify-content-center align-items-center">Learn more</Link>
+      <a href="#about" className="button d-flex m-3 mx-auto text-align-center justify-content-center align-items-center">Learn more</a>
     </section>
   )
 }
