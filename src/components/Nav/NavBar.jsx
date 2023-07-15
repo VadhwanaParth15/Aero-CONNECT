@@ -42,7 +42,7 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto d-flex align-item-center justify-content-center">
               <Nav.Link
-                href="#service"
+                href="/#service"
                 className={
                   activeLink === "service" ? "active navbar-link" : "navbar-link"
                 }
@@ -63,7 +63,7 @@ export const NavBar = () => {
               
               
               <Nav.Link
-                href="#about"
+                href="/#about"
                 className={
                   activeLink === "about" ? "active navbar-link" : "navbar-link"
                 }
