@@ -51,12 +51,12 @@ export const NavBar = () => {
                 Service
               </Nav.Link>
               <Nav.Link
-                href="https://drive.google.com/drive/folders/1Jy_X_3X23gL_CVeEgH-010sJgfMgoP-3"
+                href="/News"
                 target="_blank"
                 className={
-                  activeLink === "Schedule" ? "active navbar-link" : "navbar-link"
+                  activeLink === "News" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("Schedule")}
+                onClick={() => onUpdateActiveLink("News")}
               >
                News & Expertise
               </Nav.Link>

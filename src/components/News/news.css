@@ -1,0 +1,25 @@
+.content h2{
+    color: var(--color-black);
+    font-family: 'ubuntu';
+    border-bottom: 4px solid var(--color-primary);
+    width:fit-content;
+    line-height: 50px;
+    font-size: 30px;
+}
+.news{
+    margin-top: 5rem;
+}
+.content p{
+    padding-top: 1rem;
+    font-size: 20px;
+}
+.section_conatnt{
+    margin-top: 5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.section_conatnt img{
+    width:80%
+
+}
