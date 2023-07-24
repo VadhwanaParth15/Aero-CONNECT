@@ -31,20 +31,24 @@ export const NavBar = () => {
   return (
     <Router>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-        <Container >
+        <Container>
           <Navbar.Brand href="/">
             <img className="logonav" src={logo} alt="Logo" />
           </Navbar.Brand>
-          <Navbar.Toggle className="toggle-border" aria-controls="basic-navbar-nav">
+          <Navbar.Toggle
+            className="toggle-border"
+            aria-controls="basic-navbar-nav"
+          >
             <span className="navbar-toggler-icon"></span>
-          
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto d-flex align-item-center justify-content-center">
               <Nav.Link
                 href="/#service"
                 className={
-                  activeLink === "service" ? "active navbar-link" : "navbar-link"
+                  activeLink === "service"
+                    ? "active navbar-link"
+                    : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("home")}
               >
@@ -58,10 +62,9 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("News")}
               >
-               News & Expertise
+                News & Expertise
               </Nav.Link>
-              
-              
+
               <Nav.Link
                 href="/#about"
                 className={
@@ -82,7 +85,7 @@ export const NavBar = () => {
               >
                 SignIn
               </Nav.Link>
-             
+
               {/* <Nav.Link
                 href="/signup"
                 className={
@@ -99,7 +102,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("/signup")}
               > */}
-                {/* <FiShoppingCart /> */}
+              {/* <FiShoppingCart /> */}
               {/* </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
