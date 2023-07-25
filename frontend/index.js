@@ -5,6 +5,6 @@ app.get('/', (req, res) => {
      
 });
 
-app..port(port, () => {
+app.port(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
     });
