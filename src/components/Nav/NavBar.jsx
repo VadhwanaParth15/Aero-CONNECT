@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import "./nav.css";
 import logo from "../../Assets/aero.png";
 
-import { HashLink } from "react-router-hash-link";
+// import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
 export const NavBar = () => {

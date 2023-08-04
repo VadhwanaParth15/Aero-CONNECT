@@ -1,9 +1,9 @@
-import React, { Suspense, useRef } from "react";
+import React from "react";
 import Home from '../Home/Home'
-import Course from "../Course/Course";
+// import Course from "../Course/Course";
 import Services from "../Services/Services";
 import About from "../About/About";
-import News from "../News/News";
+// import News from "../News/News";
 
 
 const Dashboard = () => {

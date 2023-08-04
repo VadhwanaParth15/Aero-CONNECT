@@ -1,7 +1,7 @@
 import React from 'react'
 import './course.css'
 import Courses from './Course_Card'
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const AllCourse = () => {
     const allitems = [
