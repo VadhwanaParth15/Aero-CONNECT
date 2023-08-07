@@ -1,0 +1,42 @@
+.courses{
+    background: var(--color-bg);
+    padding: 2rem;
+    /* display: flex; */
+    
+}
+/* .card{
+    border: 1px solid transparent;
+} */
+
+.courses_cards {
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-bg);
+    height: fit-content;
+}
+.allcourses{
+    margin-top: 5rem;
+    background: var(--color-bg-);
+}
+.allcourses h2{
+    color: var(--color-black);
+    font-family: 'ubuntu';
+    border-bottom: 4px solid var(--color-primary);
+    width:fit-content;
+    line-height: 50px;
+}
+@media screen and (max-width: 768px) {
+    .allcourses{
+        margin-top: 10rem;
+    }
+    .courses{
+        padding: 0;
+    }
+    .courses_cards{
+        padding: 0;
+    }
+    .allcourses h2{
+        font-size: 1.5rem;
+    }
+}
+    
