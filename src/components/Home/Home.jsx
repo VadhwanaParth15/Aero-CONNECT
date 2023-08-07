@@ -1,8 +1,8 @@
 import React from 'react'
-import Carousel from 'react-bootstrap/Carousel';
-import img1 from '../../Assets/Carousels.jpg'
+// import Carousel from 'react-bootstrap/Carousel';
+// import img1 from '../../Assets/Carousels.jpg'
 import './home.css'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
