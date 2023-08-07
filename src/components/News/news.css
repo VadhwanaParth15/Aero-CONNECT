@@ -23,3 +23,11 @@
     width:80%
 
 }
+@media screen and (max-width: 768px) {
+    .news{
+        margin-top: 9rem;
+    }
+    .section_conatnt{
+        grid-template-columns: 1fr;
+    }
+}
