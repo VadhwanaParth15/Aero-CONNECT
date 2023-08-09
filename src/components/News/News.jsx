@@ -1,7 +1,7 @@
 import React from 'react'
 import './news.css'
-import rocket from '../../Assets/rocket.jpeg'
-import oic from '../../Assets/OIP.jpeg'
+// import rocket from '../../Assets/rocket.jpeg'
+// import oic from '../../Assets/OIP.jpeg'
 const News = () => {
   return (
    <section className="container news">
