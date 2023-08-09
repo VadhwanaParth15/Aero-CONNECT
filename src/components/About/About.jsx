@@ -13,7 +13,7 @@ const About = () => {
             <p>At AeroCom, our vision is to empower aerospace engineers, both students and professionals alike, by providing them with the necessary tools and resources to excel in their careers. We strive to be the go-to destination for anyone looking to pursue a career in the aerospace industry. Our ultimate goal is to help shape the future of aerospace engineering by fostering a community of skilled and inspired professionals.</p>
             <p>Let’s talk.</p>
 
-            <h3>contact@domain.com</h3>
+            <h3>Aeroconnect@domain.com</h3>
         </div>
         <div className="aboutstory">
             <AboutStory />

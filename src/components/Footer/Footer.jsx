@@ -14,7 +14,7 @@ const footer = () => {
         <a href="https://instagram.com/pxrth.02?igshid=ZDdkNTZiNTM="  rel="noreferrer" target="_blank"><BsInstagram/></a>
     </div>
         <p class="company-name">
-         Copyright 2022. Parth All Rights Reserved
+         Copyright 2022. Aero-CONNECT All Rights Reserved
         </p>
 </footer>
   )
