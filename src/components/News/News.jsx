@@ -16,8 +16,8 @@ const News = () => {
     </div>
     <div className="section_conatnt">
         <div className="content">
-            <h2>Nasa's Announcement</h2>
-            <p>AeroCom was founded by a group of experienced aerospace engineers who recognized the need for a centralized platform for career guidance and resources in the industry. With a shared passion for education and professional development, they set out to create a space for students and professionals to connect, learn, and grow. Today, AeroCom is a thriving digital agency dedicated to empowering the next generation of aerospace leaders.</p>
+            <h2>Aeronautical Students Win International Drone Design Competition</h2>
+            <p>A team of aeronautical engineering students from [College/University Name] emerged victorious in the prestigious International Drone Design Competition. Their cutting-edge drone design showcased advancements in efficiency, control, and safety, highlighting the remarkable skills of future aeronautical engineers.</p>
         </div>
     </div>
    </section>
