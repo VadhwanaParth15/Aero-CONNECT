@@ -75,15 +75,15 @@ export const NavBar = () => {
                 About Us
               </Nav.Link>
               <Nav.Link
-                href="/signin"
+                href="/login"
                 className={
-                  activeLink === "Glimpse"
+                  activeLink === "login"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("Glimpse")}
+                onClick={() => onUpdateActiveLink("login")}
               >
-                SignIn
+                LogIn
               </Nav.Link>
 
               {/* <Nav.Link

@@ -1,7 +1,7 @@
 import React from "react";
 import Dashboard from './components/Dashboard/Dashboard';
-// import Signin from './components/Signin/Signin';
-// import SignUp from './components/Signup/Signup';
+import Signup from './components/Signup/Signup'
+import Login from "./components/Login/Login";
 import { NavBar } from './components/Nav/NavBar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AllCourse from "./components/Course/AllCourse";
@@ -18,8 +18,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Dashboard/>}/>
       <Route path="/News" element={<News/>}/>
-      {/* <Route path="/signin" element={<Signin/>}/> */}
-      {/* <Route path="/signup" element={<SignUp/>}/> */}
+      <Route path="/signup" element={<Signup/>}/>
+      <Route path="/login" element={<Login/>}/>
       <Route path="/allcourses" element={<AllCourse/>}/>
       </Routes>
       </BrowserRouter>

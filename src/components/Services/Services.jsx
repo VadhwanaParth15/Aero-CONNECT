@@ -5,12 +5,12 @@ import Service from './Service'
 import './service.css'
 const Services = () => {
     const Services = [
-        {
-            title: "Aerospace Career Consulting for Professionals",
-            description: "Our career guidance program provides personalized advice and resources to help you make informed decisions about your future professional endeavors.",
-            link: "#",
-            catid: 1,
-        },
+        // {
+        //     title: "Aerospace Career Consulting for Professionals",
+        //     description: "Our career guidance program provides personalized advice and resources to help you make informed decisions about your future professional endeavors.",
+        //     link: "#",
+        //     catid: 1,
+        // },
         {
             title: "Aerospace Internship Opportunities",
             description: "Our internship program provides opportunities for students and graduates to gain practical experience and build their skills in a professional setting.",
