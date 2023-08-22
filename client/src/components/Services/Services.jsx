@@ -26,7 +26,7 @@ const Services = () => {
         {
             title: "Aerospace Industry Events and Conferences",
             description: "Our Events service offers seamless planning and execution of formal corporate gatherings, conferences, and social events.",
-            link: "#",
+            link: "/events",
             catid: 4,
         }
        

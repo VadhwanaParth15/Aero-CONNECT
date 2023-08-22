@@ -8,6 +8,7 @@ import AllCourse from "./components/Course/AllCourse";
 import Footer from "./components/Footer/Footer";
 import News from "./components/News/News";
 import Register from "./components/Register/Register";
+import All from "./components/Event/All";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path="/register" element={<Register/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/allcourses" element={<AllCourse/>}/>
+      <Route path="/events" element={<All/>}/>
       </Routes>
       </BrowserRouter>
       <Footer/>
