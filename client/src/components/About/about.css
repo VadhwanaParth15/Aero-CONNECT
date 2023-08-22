@@ -1,0 +1,63 @@
+
+.aboutus h1{
+    margin-top: 5rem;
+    padding: 2rem;
+    font-size: 45px;
+    background: var(--color-bg-variant);
+}
+.content h2{
+    color: var(--color-black);
+    font-family: 'ubuntu';
+    border-bottom: 4px solid var(--color-primary);
+    width:fit-content;
+    line-height: 50px;
+    font-size: 30px;
+}
+.content p{
+    padding-top: 1rem;
+    font-size: 20px;
+}
+.section_conatnt{
+    margin-top: 5rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.icon{
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.icon a{
+    background: var(--color-black);
+    color: var(--color-bg);
+    display: flex;
+    padding: 0.8rem;    
+    border-radius: 0.7rem;
+    border: 1px solid transparent;
+    
+}
+.icon a:hover{
+    color: var(--color-black);
+    background: transparent;
+    border-color: var(--color-bg);
+}
+.section_conatnt img{
+    width:80%
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .aboutus{
+        margin-top: 9rem;
+    }
+    .section_conatnt{
+        grid-template-columns: 1fr;
+    }
+}
