@@ -150,7 +150,7 @@ const Create = () => {
         else if (res.status == 201) {
             setVisible(true);
             setTimeout(() => {
-                navigate("/admin/all-events");
+                navigate("/events");
             }, 3000)
         }
     };
@@ -164,7 +164,7 @@ const Create = () => {
     
     return (
         <form onSubmit={handleSubmit} method="POST">
-            <div >
+            <div style={{marginTop:"6.5rem"}}>
                 <CContainer>
                     <CAlert color="primary" visible={visible}>
                         Event Added Successfully!!

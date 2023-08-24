@@ -5,3 +5,25 @@
 .courses{
     margin-top: 5rem;
 }
+.create{
+    margin-top: 5rem;
+    margin-left: 80%;
+}
+Event_card{
+    width: '22rem';
+    margin:'0.5rem 2rem';
+    borderColor:'transparent';
+    background:'#fbf0e9';
+    borderRadius:'1rem';
+}
+@media screen and (max-width: 768px) {
+    .create{
+        margin-left: 70%;
+        margin-top: 8rem;
+    }
+    Event_card{
+        width: '18rem';
+        margin:'0.5rem 1rem';
+    }
+}
+    

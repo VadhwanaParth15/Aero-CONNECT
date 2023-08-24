@@ -46,7 +46,8 @@ router.post("/", (req, res) => {
 // register
 router.post("/register", async (req, res) => {
   const { name, email, password, cpassword } = req.body;
-
+  const salt = await bcrypt.genSalt();
+  const passwordHash = await bcrypt.hash(password, salt);
   if (!name || !email || !password || !cpassword) {
     return res
       .status(422)
@@ -61,7 +62,7 @@ router.post("/register", async (req, res) => {
     } else if (password != cpassword) {
       return res.status(422).json({ error: "password doesn't match!!" });
     } else {
-      const user = new User({ name, email, password, cpassword });
+      const user = new User({ name, email, password:passwordHash , cpassword });
       await user.save();
 
       //send verification Email
@@ -150,6 +151,7 @@ router.post("/signin", async (req, res) => {
         res.status(400).json({ error: "Invalid Credentials !!" });
       } else {
         res.status(200).json(userLogin);
+        res.redirect("/");
       }
     }
 

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { Card } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import CardHeader from "react-bootstrap/esm/CardHeader";
-
+import ".././Services/service.css"
+import ".././Course/course.css"
 import Pagination from 'react-bootstrap/Pagination'
 import {
   CButton,
@@ -26,6 +27,7 @@ import {
   CCardText,
 
 } from "@coreui/react";
+// import Card from 'react-bootstrap/Card';
 
 const All = () => {
   const [Committee, setCommittee] = useState([]);
@@ -61,7 +63,7 @@ const All = () => {
       }
     } catch (err) {
       console.log(err);
-      navigate("/admin/dashboard");
+      navigate("/evnets");
     }
   };
   const currentUser = async () => {
@@ -77,7 +79,7 @@ const All = () => {
 
       const user = await res.json();
       setUser(user);
-      // console.log(user);
+      console.log(user);
 
       if (!res.status === 200) {
         const error = new Error(res.error);
@@ -85,7 +87,7 @@ const All = () => {
       }
     } catch (err) {
       console.log(err);
-      navigate("/login");
+      // navigate("/login");
     }
   };
   useEffect(() => {
@@ -116,21 +118,22 @@ const All = () => {
   }
   const renderCard = (event, index) => {
     return (
-      <CRow xs={{ cols: 3, gutter: 1 }} md={{ cols: 2 }}>
-        <CCol xs={3}>
-          <CCard style={{ width: "25rem" }} key={index} className="box">
+      <section className="container service">
+      <Row xs={{ cols: 3, gutter: 1 }} md={{ cols: 2 }}>
+        <Col>
+          <Card style={{ width: '22rem',margin:'0.5rem 2rem',borderColor:'transparent',background:'#fbf0e9',borderRadius:'1rem' }} key={index} className="service_card d-flex align-items-center justify-contant-center">
           {/* <CCard textColor="white" className="mb-3" style={{ maxWidth: '25rem' }} color="dark" key={index}> */}
 
-            <CCardHeader >
+            <Card.Title style={{ fontSize:"2rem" ,padding:'1rem'}}>
               <h2>{event.event_name}</h2>
-            </CCardHeader>
-            <CCardBody style={{ position: "relative" }}>
-              <CCardText>Venue: {event.venue}</CCardText>
-              <CCardText>Organiser: {event.organiser}</CCardText>
-              <CCardText>From: {event.from}</CCardText>
-              <CCardText>To: {event.to}</CCardText>
-              <CCardText>Event Created At: {event.createdAt}</CCardText>
-              <CCardText>Event Description: {event.event_desc}</CCardText>
+            </Card.Title>
+            <Card.Body style={{ position: "relative" }}>
+              <Card.Text>Venue: {event.venue}</Card.Text>
+              <Card.Text>Organiser: {event.organiser}</Card.Text>
+              <Card.Text>From: {event.from}</Card.Text>
+              <Card.Text>To: {event.to}</Card.Text>
+              <Card.Text>Event Created At: {event.createdAt}</Card.Text>
+              <Card.Text>Event Description: {event.event_desc}</Card.Text>
               <h6>Committee Involved:</h6>
               {Committee.map(committee => {
                 return (
@@ -142,7 +145,7 @@ const All = () => {
                             if (comm.value == committee._id) {
                               return (
 
-                                <CCardText>{committee.committee_name}</CCardText>
+                                <Card.Text>{committee.committee_name}</Card.Text>
                               )
                             } else {
                               return (
@@ -211,16 +214,22 @@ const All = () => {
             Delete
           </button> */}
               {/* <Card.Text type = "hidden">{card._id}</Card.Text> */}
-            </CCardBody>
+            </Card.Body>
             {/* <CButton onClick={() => setVisible(!visible)}>Launch static backdrop modal</CButton> */}
            
-          </CCard>
-        </CCol>
-      </CRow>
+          </Card>
+        </Col>
+      </Row>
+      </section>
     );
   };
 
 
-  return <div className="grid">{Event.map(renderCard)}</div>;
+  return(
+    <section className="container courses">
+      <Link to={'/events/create'}> <button className="button create">create </button></Link>
+    <div className=" d-flex align-item-center justify-contant-center courses_cards" style={ {marginTop:"5.5rem"}}>{Event.map(renderCard)}</div>;
+    </section>
+  ) 
 }
 export default All;

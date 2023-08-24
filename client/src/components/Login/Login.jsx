@@ -48,7 +48,7 @@ const Login = () => {
   if (res.status === 200 && data.role_id == 1) {
       setVisible(true);
       setTimeout(() => {
-        navigate("/admin/dashboard");
+        navigate("/");
       }, 3000) 
     }
     else{
