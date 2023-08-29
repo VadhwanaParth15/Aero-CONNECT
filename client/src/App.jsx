@@ -10,6 +10,7 @@ import News from "./components/News/News";
 import Register from "./components/Register/Register";
 import All from "./components/Event/All";
 import Create from "./components/Event/Create";
+import Internship from "./components/Internship/Internships";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <Route path="/allcourses" element={<AllCourse/>}/>
       <Route path="/events" element={<All/>}/>
       <Route path="/events/create" element={<Create/>}/>
+      <Route path="/internships" element={<Internship/>}/>
       </Routes>
       </BrowserRouter>
       <Footer/>

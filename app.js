@@ -26,10 +26,10 @@ app.use(require("./router/committee"))
 // var event = multer({ dest: './router/Event' });
 // app.use(event)
 app.use(require("./router/event"));
-app.use(require("./router/payment"));
-app.use(require("./router/menu"));
+// app.use(require("./router/payment"));
+// app.use(require("./router/menu"));
 
-app.use(require("./router/task"));
+// app.use(require("./router/task"));
 
 
 //connection

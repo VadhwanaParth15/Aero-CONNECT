@@ -58,7 +58,7 @@ const Login = () => {
    
   };
   return (
-    <form onSubmit={handleSubmit} method="POSt">
+    <form onSubmit={handleSubmit} method="POST">
       <div className="bg-light min-vh-100 d-flex flex-row align-items-center">
         <CContainer>
         <CAlert color="primary" visible={visible}>

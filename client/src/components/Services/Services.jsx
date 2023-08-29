@@ -14,7 +14,7 @@ const Services = () => {
         {
             title: "Aerospace Internship Opportunities",
             description: "Our internship program provides opportunities for students and graduates to gain practical experience and build their skills in a professional setting.",
-            link: "#",
+            link: "/internships",
             catid: 2,
         },
         {
