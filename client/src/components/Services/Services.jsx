@@ -23,12 +23,12 @@ const Services = () => {
             link: "/allcourses",
             catid: 3,
         },
-        {
-            title: "Aerospace Industry Events and Conferences",
-            description: "Our Events service offers seamless planning and execution of formal corporate gatherings, conferences, and social events.",
-            link: "/events",
-            catid: 4,
-        }
+        // {
+        //     title: "Aerospace Industry Events and Conferences",
+        //     description: "Our Events service offers seamless planning and execution of formal corporate gatherings, conferences, and social events.",
+        //     link: "/events",
+        //     catid: 4,
+        // }
        
        
       ];
